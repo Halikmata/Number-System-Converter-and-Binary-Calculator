@@ -125,7 +125,7 @@ namespace Architecture_and_Organization_midterm_project
                             int parsedToInt_whole_number_decimal = int.Parse(whole_number_decimal);
                             double parsedToDouble_decimal_point = double.Parse(Input_Decimal_string);
 
-                            string dpdfinal = "", holderstring;
+                            string binary_of_decimal_point = "", holderstring;
                             double holder, holder2 = 0;
                             //Convert the whole number to binary
                             string Decimalwn = Convert.ToString(parsedToInt_whole_number_decimal, 2);
@@ -137,7 +137,7 @@ namespace Architecture_and_Organization_midterm_project
                                     holder = parsedToDouble_decimal_point * 2;
                                     holderstring = Convert.ToString(holder);
                                     var dpd2 = holderstring.Split('.')[0];
-                                    dpdfinal += dpd2;
+                                    binary_of_decimal_point += dpd2;
                                     if (holder != 1 && holder != -1)
                                     {
                                         holderstring = holderstring.Substring(holderstring.IndexOf(".")); //This is the remaining decimal
@@ -153,7 +153,7 @@ namespace Architecture_and_Organization_midterm_project
                                 StringBuilder stringBuilder = new StringBuilder();
                                 stringBuilder.Append(Decimalwn);
                                 stringBuilder.Append(".");
-                                stringBuilder.Append(dpdfinal);
+                                stringBuilder.Append(binary_of_decimal_point);
                                 string output = GFG.findTwoscomplement(stringBuilder);
                                 //Console.WriteLine("The binary in 2\'s complement form of " + Output_Decimal + " is " + output);
                                 txtBinary.Text = output;
@@ -165,7 +165,7 @@ namespace Architecture_and_Organization_midterm_project
                                     holder = parsedToDouble_decimal_point * 2;
                                     holderstring = Convert.ToString(holder);
                                     var dpd2 = holderstring.Split('.')[0];
-                                    dpdfinal += dpd2;
+                                    binary_of_decimal_point += dpd2;
                                     if (holder != 1 && holder != -1)
                                     {
                                         holderstring = holderstring.Substring(holderstring.IndexOf("."));
@@ -181,7 +181,7 @@ namespace Architecture_and_Organization_midterm_project
                                 StringBuilder stringBuilder = new StringBuilder();
                                 stringBuilder.Append(Decimalwn);
                                 stringBuilder.Append(".");
-                                stringBuilder.Append(dpdfinal);
+                                stringBuilder.Append(binary_of_decimal_point);
                                 string output = GFG.findTwoscomplement(stringBuilder);
                                 //Console.WriteLine("The binary in 2\'s complement form of " + Output_Decimal + " is " + output);
                                 txtBinary.Text = output;
@@ -240,7 +240,7 @@ namespace Architecture_and_Organization_midterm_project
                                         break;
                                     }
                                 }
-                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + dpdfinal);
+                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
                                 string output = Decimalwn + "." + dpdfinal;
                                 txtBinary.Text = output;
                             }
@@ -266,7 +266,7 @@ namespace Architecture_and_Organization_midterm_project
                                         break;
                                     }
                                 }
-                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + dpdfinal);
+                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
                                 string output = Decimalwn + "." + dpdfinal;
                                 txtBinary.Text = output;
                             }
@@ -4893,7 +4893,7 @@ namespace Architecture_and_Organization_midterm_project
                                     break;
                                 }
                             }
-                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + dpdfinal);
+                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
                             string output = Decimalwn + "." + dpdfinal;
                             txtBinary.Text = output;
                         }
@@ -5929,7 +5929,7 @@ namespace Architecture_and_Organization_midterm_project
                                     break;
                                 }
                             }
-                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + dpdfinal);
+                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
                             string output = Decimalwn + "." + dpdfinal;
                             txtBinary.Text = output;
                         }
