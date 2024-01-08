@@ -154,7 +154,7 @@ namespace Architecture_and_Organization_midterm_project
                                 stringBuilder.Append(binary_of_whole_number);
                                 stringBuilder.Append(".");
                                 stringBuilder.Append(binary_of_decimal_point);
-                                string output = GFG.findTwoscomplement(stringBuilder);
+                                string output = GFG.findTwoscomplement(stringBuilder); //converts it back to negative
                                 //Console.WriteLine("The binary in 2\'s complement form of " + Output_Decimal + " is " + output);
                                 txtBinary.Text = output;
                             }
@@ -182,7 +182,7 @@ namespace Architecture_and_Organization_midterm_project
                                 stringBuilder.Append(binary_of_whole_number);
                                 stringBuilder.Append(".");
                                 stringBuilder.Append(binary_of_decimal_point);
-                                string output = GFG.findTwoscomplement(stringBuilder);
+                                string output = GFG.findTwoscomplement(stringBuilder); //converts it back to negative
                                 //Console.WriteLine("The binary in 2\'s complement form of " + Output_Decimal + " is " + output);
                                 txtBinary.Text = output;
                             }
