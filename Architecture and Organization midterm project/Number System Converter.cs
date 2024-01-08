@@ -128,7 +128,7 @@ namespace Architecture_and_Organization_midterm_project
                             string binary_of_decimal_point = "", holderstring;
                             double holder, holder2 = 0;
                             //Convert the whole number to binary
-                            string Decimalwn = Convert.ToString(parsedToInt_whole_number_decimal, 2);
+                            string binary_of_whole_number = Convert.ToString(parsedToInt_whole_number_decimal, 2);
 
                             if (Input_Decimal_string.Length > 8)
                             {
@@ -151,7 +151,7 @@ namespace Architecture_and_Organization_midterm_project
                                 }
 
                                 StringBuilder stringBuilder = new StringBuilder();
-                                stringBuilder.Append(Decimalwn);
+                                stringBuilder.Append(binary_of_whole_number);
                                 stringBuilder.Append(".");
                                 stringBuilder.Append(binary_of_decimal_point);
                                 string output = GFG.findTwoscomplement(stringBuilder);
@@ -179,7 +179,7 @@ namespace Architecture_and_Organization_midterm_project
                                 }
 
                                 StringBuilder stringBuilder = new StringBuilder();
-                                stringBuilder.Append(Decimalwn);
+                                stringBuilder.Append(binary_of_whole_number);
                                 stringBuilder.Append(".");
                                 stringBuilder.Append(binary_of_decimal_point);
                                 string output = GFG.findTwoscomplement(stringBuilder);
@@ -240,7 +240,7 @@ namespace Architecture_and_Organization_midterm_project
                                         break;
                                     }
                                 }
-                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
+                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + binary_of_whole_number + "." + binary_of_decimal_point);
                                 string output = Decimalwn + "." + dpdfinal;
                                 txtBinary.Text = output;
                             }
@@ -266,7 +266,7 @@ namespace Architecture_and_Organization_midterm_project
                                         break;
                                     }
                                 }
-                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
+                                //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + binary_of_whole_number + "." + binary_of_decimal_point);
                                 string output = Decimalwn + "." + dpdfinal;
                                 txtBinary.Text = output;
                             }
@@ -4893,7 +4893,7 @@ namespace Architecture_and_Organization_midterm_project
                                     break;
                                 }
                             }
-                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
+                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + binary_of_whole_number + "." + binary_of_decimal_point);
                             string output = Decimalwn + "." + dpdfinal;
                             txtBinary.Text = output;
                         }
@@ -5929,7 +5929,7 @@ namespace Architecture_and_Organization_midterm_project
                                     break;
                                 }
                             }
-                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + Decimalwn + "." + binary_of_decimal_point);
+                            //Console.WriteLine("The Binary form of " + Output_Decimal + " is " + binary_of_whole_number + "." + binary_of_decimal_point);
                             string output = Decimalwn + "." + dpdfinal;
                             txtBinary.Text = output;
                         }
