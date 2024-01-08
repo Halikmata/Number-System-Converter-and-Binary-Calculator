@@ -140,9 +140,9 @@ namespace Architecture_and_Organization_midterm_project
                                     dpdfinal += dpd2;
                                     if (holder != 1 && holder != -1)
                                     {
-                                        holderstring = holderstring.Substring(holderstring.IndexOf("."));
+                                        holderstring = holderstring.Substring(holderstring.IndexOf(".")); //This is the remaining decimal
                                         holder2 = double.Parse(holderstring);
-                                        parsedToDouble_decimal_point = holder2;
+                                        parsedToDouble_decimal_point = holder2; //Loops the value again
                                     }
                                     if (holder == 1 || holder == -1)
                                     {
